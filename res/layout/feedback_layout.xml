@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedback_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+    
+    <RelativeLayout
+        android:id="@+id/feedback_layout_name_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_title_bar" >
+        
+        <ImageView
+            android:id="@+id/feedback_layout_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium" />
+        
+        <ImageView
+            android:id="@+id/feedback_layout_button_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:visibility="invisible" />
+        
+        <com.agitive.usembassy.layouts.CustomTextView
+            android:id="@+id/feedback_layout_layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/feedback_layout_button_frame"
+            android:layout_toRightOf="@id/feedback_layout_back_button"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="@string/feedback_title"
+            android:textColor="@color/layout_title_text"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/feedback_layout_name_bar_layout"
+        android:scrollbars="none"
+        android:fadingEdge="none" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingBottom="@dimen/margin_large" >
+    
+    		<com.agitive.usembassy.layouts.CustomTextView
+		        android:id="@+id/feedback_layout_description"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/feedback_description"
+		        android:textSize="@dimen/text_normal"
+		        android:textColor="@color/feedback_layout_texts" />
+    		
+    		<RelativeLayout
+    		    android:id="@+id/feedback_layout_contact_information_button"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_below="@id/feedback_layout_description"
+    		    android:layout_marginTop="@dimen/margin_medium"
+    		    android:paddingTop="@dimen/margin_medium"
+    		    android:paddingLeft="@dimen/margin_medium"
+    		    android:paddingBottom="@dimen/margin_medium"
+    		    android:paddingRight="@dimen/margin_small"
+    		    android:background="@color/button_view_to_app_background" >
+    		    
+    		    <ImageView
+    		        android:id="@+id/feedback_layout_contact_information_button_arrow"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_alignParentRight="true"
+    		        android:layout_centerVertical="true"
+    		        android:src="@drawable/arrow_button" />
+    		    
+    		    <com.agitive.usembassy.layouts.CustomTextView
+    		        android:id="@+id/feedback_layout_contact_information_button_text"
+    		        android:layout_width="match_parent"
+    		        android:layout_height="wrap_content"
+    		        android:layout_alignParentLeft="true"
+    		        android:layout_toLeftOf="@id/feedback_layout_contact_information_button_arrow"
+    		        android:layout_marginRight="@dimen/margin_small"
+    		        android:textColor="@color/button_view_to_app_text"
+    		        android:textSize="@dimen/text_normal" />
+    		    
+    		</RelativeLayout>
+    
+   			<EditText
+		        android:id="@+id/feedback_layout_email"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/feedback_layout_contact_information_button"
+		        android:layout_marginTop="@dimen/margin_medium"
+		        android:inputType="textEmailAddress"
+		        android:hint="@string/feedback_email"
+		        android:textSize="@dimen/text_normal"
+		        android:textColor="@color/feedback_layout_texts" >
+
+        		<requestFocus />
+    	
+    		</EditText>
+
+    		<EditText
+		        android:id="@+id/feedback_layout_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/feedback_layout_email"
+		        android:minLines="5"
+		        android:inputType="textMultiLine"
+		        android:hint="@string/feedback_content"
+		        android:textSize="@dimen/text_normal"
+		        android:textColor="@color/feedback_layout_texts" />
+    
+    		<RelativeLayout
+		        android:id="@+id/feedback_layout_send_button_layout"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@id/feedback_layout_content"
+		        android:paddingTop="@dimen/margin_medium"
+		        android:paddingBottom="@dimen/margin_large" >
+        
+        		<com.agitive.usembassy.layouts.CustomTextView
+		            android:id="@+id/feedback_layout_send_button_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/feedback_send"
+		            android:textColor="@color/feedback_layout_texts"
+		            android:textSize="@dimen/text_normal" />
+        
+    		</RelativeLayout>
+    	
+    	</RelativeLayout>
+    
+    </ScrollView>
+
+</RelativeLayout>

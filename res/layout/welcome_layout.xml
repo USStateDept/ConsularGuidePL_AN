@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_theme" >
+    
+	<com.agitive.usembassy.layouts.ViewPagerParallax
+	    android:id="@+id/welcome_layout_view_pager_parallax"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+	
+	<com.viewpagerindicator.CirclePageIndicator
+	    android:id="@+id/welcome_layout_page_indicator"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:padding="@dimen/margin_medium" />
+	
+	<ImageView
+	    android:id="@+id/welcome_layout_emblem"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/emblem" />
+    
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">US Embassy Mobile</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- WelcomeActivity -->
+    <string name="title_activity_welcome">US Embassy Mobile</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="welcome_text">
+        Welcome to the U.S. Department of State\'s \"US Embassy Mobile\"! This 
+        is your source of all consular information for the U.S. Embassy 
+        Warsaw, the U.S. Consulate Krakow and Consular Agency Poznan. It is 
+        designed to help you quickly and easily find answers to your visa 
+        questions, provide assistance to both resident and visiting U.S. 
+        citizens, and supply you with the latest U.S news from the Embassy 
+        news feed and twitter account. Get your answers right here, right now.
+    </string>
+    <string name="welcome_swipe_to_accept">Please swipe to the left to accept terms and conditions</string>
+    <string name="regulations_info">
+        To continue using the app please read the Terms &amp; Conditions below and press Accept
+    </string>
+    <string name="regulations_title">Privacy Statement</string>
+    <string name="regulations_text_part_0">
+    	We collect no personal information (PII) about you when you visit our 
+    	site unless you choose to provide this information to us. Submitting 
+    	personally identifiable information through our website is voluntary, 
+    	but by doing so, you are giving your permission to use the information 
+    	for the stated purpose. Not providing certain information may result 
+    	in our inability to provide you with a service you desire. 
+    	If you choose to provide us with PII on a Department website, through 
+    	such methods as completing a web form or sending us an email, we will 
+    	use that information to help us provide you the information or service 
+    	you have requested or to respond to your message. The information we 
+    	may receive from you varies based on what you do when visiting our 
+    	site.\n\nWe do automatically collect and store the name of the domain 
+    	from which you access the Internet (.com, .edu, etc.); the date and 
+    	time you access our site; and the Internet address of the website 
+    	(such as a search engine or referring page) from which you reached our 
+    	site. We use the information we collect to count the number of 
+    	visitors to the different pages on our site, and to help us make our 
+    	site more useful to visitors like you.
+   	</string>
+   	<string name="regulations_text_part_1">If You Send Us Feedback</string>
+   	<string name="regulations_text_part_2">
+   	    You may choose to provide us with personal information via our 
+   	    feedback capability. We use the information to improve our service to 
+   	    you or to respond to your request. Sometimes we forward your e-mail to 
+   	    other U.S. government agencies who may be better able to help you. 
+    	Except for authorized law enforcement investigations, we do not share 
+    	our e-mail with any other outside organizations.
+    </string>
+    <string name="regulations_text_part_3">Third-Party Websites and Applications</string>
+    <string name="regulations_text_part_4">
+        We link to social networking and other kinds of third-party websites. 
+        We use social networking websites to interact with the foreign 
+        audiences and to engage in public diplomacy worldwide. Social 
+        networking websites are used to publicize embassy events, and engage 
+        with members of the public. We also use web measurement and 
+        customization technologies to measure the number of visitors to our 
+        websites and their various sections and to help make our websites more 
+        useful to visitors. In some cases, the third-party application may 
+        request an email address, username, password, and geographic location 
+        for account registration purposes. We do not use third-party websites 
+        to solicit and collect PII from individuals. We do not collect or 
+        store any PII collected by any third-party website, and no PII will be 
+        disclosed, sold or transferred to any other entity outside the 
+        Department of State, unless required for law enforcement purposes or 
+        by statute.\n\nWe may use various types of online surveys to collect 
+        opinions and feedback from a random sample of visitors. Primarily, the 
+        State Department uses the ForeSee Results American Customer 
+        Satisfaction Index (ACSI) online survey on an ongoing basis to obtain 
+        feedback and data on visitor satisfaction with our websites. This 
+        survey does not collect PII. Although the survey invitation pops up 
+        for a random sample of visitors, it is optional, and not all embassy 
+        websites carry the survey. If you decline the survey, you will still 
+        have access to the identical information and resources at our site as 
+        those who do take the survey. The survey reports are available only to 
+        web managers and other designated staff who require this information 
+        to perform their duties. We may use other limited-time surveys for 
+        specific purposes, which are explained at the time they are posted.
+    </string>
+    <string name="regulations_text_part_5">Links to External Websites</string>
+    <string name="regulations_text_part_6">
+    	Our app may have links to other U.S. agencies, embassies, multilateral 
+    	organizations, and private organizations in both the United States and 
+    	other nations. When you follow a link and visit a website, you are no 
+    	longer in our app and are subject to the privacy policy of the web 
+    	site.\n\nEvery effort is made to provide accurate and complete 
+    	information. However, we cannot guarantee that there will be no 
+    	errors. With respect to documents and information on this app, neither 
+    	the embassy nor its employees or contractors make any warranty, 
+    	expressed or implied, including the warranties of merchantability and 
+    	fitness for a particular purpose with respect to documents available 
+    	from this app. Additionally, the embassy assumes no legal liability 
+    	for the accuracy, completeness, or usefulness of any information, 
+    	product, or process disclosed herein and does not represent that use 
+    	of such information, product, or process would not infringe on 
+    	privately owned rights.\n\nFor app security purposes and to ensure 
+    	that this service remains available to all users, this app may use 
+    	software programs to monitor usage traffic to identify unauthorized 
+    	attempts to upload or change information or otherwise cause damage. 
+    	Unauthorized attempts to upload information or change information on 
+    	this service are strictly prohibited and may be punishable under the 
+    	Computer Fraud and Abuse Act of 1986. Information also may be used for 
+    	authorized law enforcement investigations. Except for the above 
+    	purposes, no other attempts are made to identify individual users or 
+    	their usage habits. Unauthorized attempts to upload information and/or 
+    	change information on these web sites are strictly prohibited and are 
+    	subject to prosecution under the Computer Fraud and Abuse Act of 1986 
+    	and Title 18 U.S.C. Sec.1001 and 1030.
+    </string>
+	<string name="accept">Accept</string>
+	    
+    <!-- Menu -->
+    <string name="home">Home</string>
+    <string name="language_en">EN</string>
+    <string name="language_pl">PL</string>
+    <string name="language">Language</string>
+
+    <!-- MainActivity -->
+    <string name="title_activity_you_tube_player">YouTubePlayerActivity</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
+    <string name="main_activity_no_internet">There is no Internet connection. Content cannot be updated</string>
+    <string name="main_activity_sync">Sync in progress. Please wait&#8230;</string>
+    
+    <!-- Toolbar -->
+    <string name="feedback" >Feedback</string>
+    <string name="toolbar_language_en">EN</string>
+    <string name="toolbar_language_pl">PL</string>
+    
+    <!-- Videos Layout -->
+    <string name="recent_videos">Recent video</string>
+    <string name="most_viewed">Most viewed</string>
+    <string name="videos_fragment_server_error_message">No videos available. Please try again later</string>
+    <string name="videos_fragment_no_internet_for_video_play">There is no Internet connection. Video cannot be played</string>
+    <string name="videos_fragment_no_internet_for_videos_download">There is no Internet connection. Videos are not available</string>
+    
+    <!-- FileManager -->
+    <string name="delete">DELETE</string>
+   	<string name="update">UPDATE</string>
+   	<string name="send">Send \u00BB</string>
+   	<string name="update_in_file_detail">Update:\u0020</string>
+   	<string name="file_manager_server_error_message">Your files list could be out of date. Please try again later</string>
+   	<string name="file_manager_no_internet_files_list">There is no Internet connection. Information about new files cannot be downloaded</string>
+   	<string name="file_manager_no_internet_file_downloading">There is no Internet connection. File cannot be downloaded</string>
+   	<string name="file_manager_file_error">File cannot be downloaded. Please try again later</string>
+   	<string name="file_manager_file_detail_divider">" | "</string>
+   	
+   	<!-- Feedback -->
+   	<string name="feedback_title">Feedback</string>
+   	<string name="feedback_email">Your e-mail address (optional)</string>
+   	<string name="feedback_content">Content</string>
+   	<string name="feedback_send">Send \u00BB</string>
+   	<string name="feedback_send_successful">Feedback sent to the server</string>
+   	<string name="feedback_empty_content">Feedback content cannot be empty</string>
+   	<string name="feedback_email_address_not_valid">E-mail address is not valid</string>
+   	<string name="feedback_no_internet">There is no Internet connection. Feedback cannot be sent</string>
+   	<string name="feedback_too_short_time">You can send one feedback per minute. Please try again later</string>
+   	<string name="feedback_server_error_message">It is not possible to send your feedback. Please try again later</string>
+   	<string name="feedback_description">
+   	    Please share with us your comments and suggestions on your experience 
+   	    using our Consular App through this page. If you have questions about 
+   	    visa status or non-app related questions, please click here:
+   	</string>
+   	
+   	<!-- Progress Dialog -->
+   	<string name="progress_dialog_message">Downloading new content in progress.\nPlease wait&#8230;</string>
+   	
+   	<!-- Update Question Dialog -->
+   	<string name="update_question_updated_available">Updates are available</string>
+   	<string name="update_question_content">Updates are available for download. You can download them now and go to the main screen or update the content when the application will be started next time.</string>
+   	<string name="update_question_update_now">Update now</string>
+   	<string name="update_question_next_time">Update next time</string>
+   	
+   	<!-- Call Dialog -->
+   	<string name="call_dialog_title">Do you want to call?</string>
+   	<string name="call_dialog_message">You will begin to call phone number</string>
+   	<string name="call_dialog_positive">Yes</string>
+   	<string name="call_dialog_negative">No</string>
+   	
+   	<!-- Banner -->
+   	<string name="banner_type_emergency">Emergency</string>
+   	<string name="banner_type_security_advisory">Security Advisory</string>
+   	<string name="banner_type_calendar_update">Calendar Update</string>
+   	<string name="banner_type_new_media_release">New Media Release</string>
+   	<string name="banner_type_general_update">General Update</string>
+   	
+   	<!-- Main screen -->
+   	<string name="main_screen_welcome">Welcome</string>
+   	<string name="main_screen_us_mission_poland">US Mission Poland</string>
+   	<string name="main_screen_server_error_message">News and Tweets could be out of date</string>
+   	<string name="main_screen_no_internet">There is no Internet connection. News and Tweets cannot be updated</string>
+   	<string name="main_screen_no_internet_for_tweet">There is no Internet connection. Tweet cannot be opened</string>
+   	
+   	<!-- Article -->
+   	<string name="article_layout_layout_name">Article</string>
+   	
+   	<!-- Server error dialog fragment -->
+   	<string name="server_error_dialog_title">The service temporarily unavailable</string>
+   	<string name="server_error_dialog_neutral_button_text">OK</string>
+   	
+   	<!-- News Fragment -->
+   	<string name="news_fragment_server_error_message">News and Tweets could be out of date. Please try again later</string>
+   	<string name="news_fragment_no_internet">There is no Internet connection. News and Tweets cannot be updated</string>
+   	<string name="news_fragment_sync">Sync in progress. Please wait&#8230;</string>
+   	
+   	<!-- Passport Tracking -->
+   	<string name="passport_tracking_passport_number">Passport number</string>
+   	<string name="passport_tracking_send">Check passport status \u00BB</string>
+   	<string name="passport_tracking_server_error_message">Passport status cannot be checked. Please try again later</string>
+   	<string name="passport_tracking_no_internet">There is no Internet connection. Passport status cannot be checked</string>
+   	<string name="passport_tracking_passport_number_empty">Passport number cannot be empty</string>
+   	<string name="passport_tracking_description">
+   	    After your visa interview at the Embassy, you may wish to track the 
+   	    location of your passport. Please use the following form to check the 
+   	    status of your passport.\n\nIf your passport is ready for pick-up, 
+   	    please collect it in a timely manner and bring supporting 
+   	    documents.\n\nPlease note that TNT Express will only hold passports 
+   	    for 9 calendar days from the date that you receive confirmation that 
+   	    your passport has arrived at the pickup location. Failure to pick up 
+   	    your passport within this time may cause delays in the receipt of your 
+   	    passport.
+	</string>
+   	    
+   	<!-- File Manager Deleting Files Dialog Fragment -->
+   	<string name="file_manager_deleting_files_dialog_fragment_title">These documents will be removed from the application</string>
+   	<string name="file_manager_deleting_files_dialog_fragment_ok">OK</string>
+
+</resources>

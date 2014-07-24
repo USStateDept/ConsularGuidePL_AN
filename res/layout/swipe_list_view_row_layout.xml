@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/swipe_list_view_back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_background" >
+        
+        <RelativeLayout
+            android:id="@+id/swipe_list_view_update_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_xlarge" >
+		   	
+		   	<com.agitive.usembassy.layouts.CustomTextView
+		    	android:id="@+id/swipe_list_view_update_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		       	android:layout_centerInParent="true"
+		        android:text="@string/update"
+		        android:textColor="@color/file_manager_update_text"
+		        android:textSize="@dimen/text_small" />
+		   	
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/swipe_list_view_delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_xlarge" >
+      
+        	<com.agitive.usembassy.layouts.CustomTextView
+            	android:id="@+id/swipe_list_view_delete_text"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true"
+            	android:text="@string/delete"
+            	android:textColor="@color/file_manager_delete_text"
+            	android:textSize="@dimen/text_small" />
+        
+        </RelativeLayout>
+                      
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/swipe_list_view_front_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/file_manager_front_background_transparent" >
+        
+        <RelativeLayout
+            android:id="@+id/swipe_list_view_front_layout_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/margin_xlarge"
+        	android:paddingRight="@dimen/margin_xlarge"
+        	android:paddingTop="@dimen/margin_medium"
+        	android:paddingBottom="@dimen/margin_medium"
+            android:background="@color/layout_background" >
+            
+            <ImageView
+	            android:id="@+id/swipe_list_view_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true" />
+            
+            <ProgressBar
+	            android:id="@+id/swipe_list_view_progress_bar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:visibility="invisible" />
+            
+            <RelativeLayout
+	            android:id="@+id/swipe_list_view_file_info_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toLeftOf="@id/swipe_list_view_icon"
+	            android:layout_alignParentLeft="true" >
+            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/swipe_list_view_file_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/file_manager_file_name"
+	                android:textSize="@dimen/text_normal"
+	                android:layout_marginRight="@dimen/margin_medium" />
+            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/swipe_list_view_file_detail_1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/swipe_list_view_file_name"
+	                android:layout_marginRight="@dimen/margin_medium"
+	                android:layout_marginTop="@dimen/margin_small"
+	                android:textColor="@color/file_manager_file_detail_1"
+	                android:textSize="@dimen/text_small" />
+            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/swipe_list_view_file_detail_2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/swipe_list_view_file_detail_1"
+	                android:textColor="@color/file_manager_file_detail_2"
+	                android:textSize="@dimen/text_small"
+	                android:text="@string/update_in_file_detail" />
+            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/swipe_list_view_file_date"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignTop="@id/swipe_list_view_file_detail_2"
+	                android:layout_toRightOf="@id/swipe_list_view_file_detail_2"
+	                android:textColor="@color/file_manager_file_date"
+	                android:textSize="@dimen/text_small" />
+            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/swipe_list_view_file_detail_divider"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignTop="@id/swipe_list_view_file_date"
+	                android:layout_toRightOf="@id/swipe_list_view_file_date"
+	                android:text="@string/file_manager_file_detail_divider"
+	                android:textColor="@color/file_manager_file_detail_divider"
+	                android:textSize="@dimen/text_small" />
+            
+	            <RelativeLayout
+	                android:id="@+id/swipe_view_send_button_layout"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/swipe_list_view_file_detail_divider"
+	                android:layout_alignBottom="@id/swipe_list_view_file_detail_divider"
+	                android:paddingTop="@dimen/margin_medium"
+	                android:layout_marginRight="@dimen/margin_medium" >
+	                
+	                <com.agitive.usembassy.layouts.CustomTextView
+	                    android:id="@+id/swipe_view_send_button_text"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/send"
+	                    android:textColor="@color/file_manager_send_button_text"
+	                    android:textSize="@dimen/text_small" />
+	                
+	            </RelativeLayout>
+            
+        	</RelativeLayout>
+            
+        </RelativeLayout>
+          
+    </RelativeLayout>
+    
+
+</RelativeLayout>

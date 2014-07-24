@@ -1,0 +1,9 @@
+package com.radaee.privateKeys;
+
+public class AgitivePrivateKeys {
+
+	public static final String COMPANY = "Company name";
+	public static final String EMAIL = "e-mail";
+	public static final String SERIAL = "Serial Code";
+	
+}

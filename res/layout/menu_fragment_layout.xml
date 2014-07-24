@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+	    
+    <RelativeLayout
+        android:id="@+id/menu_fragment_layout_menu_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu_title" >
+	        
+        <ImageView
+            android:id="@+id/menu_fragment_layout_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium" />
+	        
+        <ImageView
+            android:id="@+id/menu_fragment_layout_button_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:visibility="invisible" />
+	        
+        <com.agitive.usembassy.layouts.CustomTextView
+            android:id="@+id/menu_fragment_layout_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/menu_fragment_layout_button_frame"
+            android:layout_toRightOf="@id/menu_fragment_layout_back_button"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium"
+            android:textColor="@color/menu_title_text"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+	        
+	</RelativeLayout>
+	    
+    <ListView
+        android:id="@+id/menu_fragment_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_fragment_layout_menu_name_layout"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_theme"
+        android:divider="@color/menu_title"
+        android:dividerHeight="1dp"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:cacheColorHint="@color/list_view_cache_color_hint" >
+	        
+	</ListView>
+    
+</RelativeLayout>

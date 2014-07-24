@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="/Users/Bystysz/android-sdks/platforms/android-18/android.jar:libs/pdfviewer2.9.6/libs/com.radaee.pdfex_view.jar:libs/google-play-services_lib/libs/google-play-services.jar:libs/twitter4j-core-3.0.5.jar:libs/google-play-services_lib/bin/google-play-services_lib.jar:libs/android-support-v4.jar:libs/pdfviewer2.9.6/bin/pdfreader.jar:libs/YouTubeAndroidPlayerApi.jar:libs/TestFlightLib.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.agitive.usembassy.network,com.agitive.usembassy.animations,com.agitive.usembassy.layouts,com.agitive.usembassy.application,com.agitive.databases,com.agitive.usembassy.services,com.agitive.usembassy.gestures,com.agitive.usembassy.fragments,com.agitive.usembassy.parsers,com.agitive.usembassy.global,com.agitive.usembassy.activities,com.agitive.usembassy.broadcastReceivers" source="1.6" sourcepath="gen:src" splitindex="true" use="true" version="true">
+            <link href="file:/Users/Bystysz/Programy/Agitive/USEmbassy/US_Embassy/doc/"/>
+            <link href="file:/Users/Bystysz/android-sdks/docs/reference/"/>
+        </javadoc>
+    </target>
+</project>

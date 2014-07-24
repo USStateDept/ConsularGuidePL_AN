@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+    
+	<RelativeLayout
+        android:id="@+id/map_layout_name_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_title_bar" >
+        
+	    <ImageView
+            android:id="@+id/map_layout_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium" />
+	    
+	    <ImageView
+            android:id="@+id/map_layout_button_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:visibility="invisible" />
+        
+	    <com.agitive.usembassy.layouts.CustomTextView
+            android:id="@+id/map_layout_layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/map_layout_button_frame"
+            android:layout_toRightOf="@id/map_layout_back_button"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium"
+            android:textColor="@color/layout_title_text"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+	    
+	</RelativeLayout>
+	    
+	<RelativeLayout
+        android:id="@+id/map_layout_map_layout"
+    	android:layout_width="match_parent"
+     	android:layout_height="1dp"
+     	android:layout_below="@id/map_layout_name_bar_layout" >
+	        
+      	<FrameLayout
+           	android:id="@+id/map_layout_map_container"
+         	android:layout_width="match_parent"
+        	android:layout_height="match_parent" />
+	        	
+       	<View
+       	    android:id="@+id/map_layout_map_clicker"
+       	    android:layout_width="match_parent"
+       	    android:layout_height="match_parent"
+       	    android:background="@color/map_clicker" />
+	        	
+	</RelativeLayout>
+	        
+    <ScrollView
+        android:id="@+id/map_layout_custom_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map_layout_map_layout"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none"
+        android:fadingEdge="none" >
+         
+        <RelativeLayout
+            android:id="@+id/map_layout_custom_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingBottom="@dimen/margin_large" />
+         
+ 	</ScrollView>
+ 	
+    <RelativeLayout
+        android:id="@+id/map_layout_main_progress_bar_layout"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/layout_background"
+	    android:clickable="true"
+	    android:soundEffectsEnabled="false" >
+        
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

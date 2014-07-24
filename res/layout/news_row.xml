@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal"
+	android:weightSum="2" >        
+        
+    <com.agitive.usembassy.layouts.NewsLayout
+        android:id="@+id/news_row_layout_news_0_layout"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:background="@color/news_background" >
+	    
+        <ImageView
+            android:id="@+id/news_row_layout_landscape_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />"
+            
+       	<ImageView
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:src="@drawable/news_gradient" />
+            
+        <ImageView
+            android:id="@+id/news_row_layout_read_more_0"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:src="@drawable/read_more"
+	       	android:layout_alignParentRight="true"
+	       	android:layout_alignParentBottom="true"
+	       	android:layout_marginRight="@dimen/margin_xlarge"
+	       	android:layout_marginBottom="@dimen/margin_xlarge" />
+            
+        <com.agitive.usembassy.layouts.CustomTextView
+            android:id="@+id/news_row_layout_news_0_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toLeftOf="@id/news_row_layout_read_more_0"
+	        android:layout_marginLeft="@dimen/margin_xlarge"
+	        android:layout_marginBottom="@dimen/margin_xlarge"
+	        android:layout_marginRight="@dimen/margin_small"
+	        android:textColor="@color/news_title"
+	        android:maxLines="4"
+	        android:ellipsize="end" />
+                        
+    </com.agitive.usembassy.layouts.NewsLayout>
+        
+    <com.agitive.usembassy.layouts.NewsLayout
+        android:id="@+id/news_row_layout_news_1_layout"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:background="@color/news_background" >
+        
+        <ImageView
+            android:id="@+id/news_row_layout_landscape_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+            
+        <ImageView
+        	android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/news_gradient" />
+            
+        <ImageView
+            android:id="@+id/news_row_layout_read_more_1"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:src="@drawable/read_more"
+	       	android:layout_alignParentRight="true"
+	       	android:layout_alignParentBottom="true"
+	       	android:layout_marginRight="@dimen/margin_xlarge"
+	       	android:layout_marginBottom="@dimen/margin_xlarge" />
+            
+        <com.agitive.usembassy.layouts.CustomTextView
+            android:id="@+id/news_row_layout_news_1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/news_row_layout_read_more_1"
+            android:layout_marginLeft="@dimen/margin_xlarge"
+            android:layout_marginBottom="@dimen/margin_xlarge"
+            android:layout_marginRight="@dimen/margin_small"
+            android:textColor="@color/news_title"
+            android:maxLines="4"
+            android:ellipsize="end" />
+                        
+    </com.agitive.usembassy.layouts.NewsLayout>
+        
+</LinearLayout>

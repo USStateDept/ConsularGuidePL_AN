@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+    
+    <com.viewpagerindicator.CirclePageIndicator
+	    android:id="@+id/steps_view_pager_layout_page_indicator"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:padding="@dimen/margin_medium" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/steps_view_pager_layout_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/steps_view_pager_layout_page_indicator" />
+    
+    <RelativeLayout
+        android:id="@+id/steps_view_pager_layout_main_progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_background"
+        android:clickable="true"
+    	android:soundEffectsEnabled="false" >
+        
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

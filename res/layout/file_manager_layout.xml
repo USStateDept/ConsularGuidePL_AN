@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+    
+    <RelativeLayout
+        android:id="@+id/file_manager_layout_name_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_title_bar" >
+        
+        <ImageView
+            android:id="@+id/file_manager_layout_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium" />
+        
+        <ImageView
+            android:id="@+id/file_manager_layout_button_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:visibility="invisible" />
+        
+        <com.agitive.usembassy.layouts.CustomTextView
+            android:id="@+id/file_manager_layout_layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/file_manager_layout_button_frame"
+            android:layout_toRightOf="@id/file_manager_layout_back_button"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium"
+            android:textColor="@color/layout_title_text"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        
+	</RelativeLayout>
+
+    <!--  <com.agitive.usembassy.layouts.FileManagerScrollView
+        android:id="@+id/file_manager_layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/file_manager_layout_name_bar_layout" >
+
+        <LinearLayout
+            android:id="@+id/file_manager_layout_files"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_large"
+            android:orientation="vertical" >
+        </LinearLayout>
+            
+    </com.agitive.usembassy.layouts.FileManagerScrollView> -->
+    
+    <!--  <com.agitive.usembassy.libraries.SwipeListView.SwipeListView
+    	
+	/>-->
+	
+    <com.agitive.usembassy.libraries.SwipeListView.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/file_manager_layout_swipe_list_view"
+        android:listSelector="@color/swipe_list_view_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/file_manager_layout_name_bar_layout"
+        android:dividerHeight="1dp"
+        android:divider="@color/files_divider"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        swipe:swipeFrontView="@+id/swipe_list_view_front_layout"
+        swipe:swipeBackView="@+id/swipe_list_view_back_layout" />
+    
+    <RelativeLayout
+        android:id="@+id/swipe_list_view_update_layout_meter"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_xlarge"
+        android:paddingRight="@dimen/margin_xlarge"
+        android:visibility="invisible" >
+    
+	    <com.agitive.usembassy.layouts.CustomTextView
+	        android:id="@+id/swipe_list_view_update_text_meter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/update"
+	        android:textSize="@dimen/text_small" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/swipe_list_view_delete_layout_meter"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_xlarge"
+        android:paddingRight="@dimen/margin_xlarge"
+        android:visibility="invisible" >
+    
+	    <com.agitive.usembassy.layouts.CustomTextView
+	        android:id="@+id/swipe_list_view_delete_text_meter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/delete"
+	        android:textSize="@dimen/text_small" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/file_manager_layout_main_progress_bar_layout"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/layout_background"
+	    android:clickable="true"
+    	android:soundEffectsEnabled="false" >
+        
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+    
+    <View
+        android:id="@+id/additional_content_layout_divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/additional_content_divider" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/additional_content_layout_divider"
+        android:scrollbars="none"
+        android:fadingEdge="none" >
+        
+        <RelativeLayout
+            android:id="@+id/additional_content_layout_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium" />
+        
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/additional_content_layout_main_progress_bar_layout"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/layout_background"
+	    android:clickable="true"
+	    android:soundEffectsEnabled="false" >
+        
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

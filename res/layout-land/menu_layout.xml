@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_theme" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <RelativeLayout
+            android:id="@+id/menu_layout_language_bar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menu_language_bar" >
+            
+            <com.agitive.usembassy.layouts.CustomTextView
+	            android:id="@+id/menu_layout_language_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:textSize="@dimen/text_normal"
+	            android:layout_marginLeft="@dimen/margin_large"
+	            android:text="@string/language"
+	            android:textColor="@color/language_text" />
+            
+			<com.agitive.usembassy.layouts.SquareLayout
+			    android:id="@+id/menu_layout_language_polish_layout"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_alignParentRight="true" >
+				    
+				<com.agitive.usembassy.layouts.CustomTextView
+			        android:id="@+id/menu_layout_language_polish_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerInParent="true"
+			        android:text="@string/language_pl"
+			        android:textSize="@dimen/text_normal" />
+				    
+			</com.agitive.usembassy.layouts.SquareLayout>
+				
+			<View
+	        	android:id="@+id/menu_layout_language_divider"
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:layout_toLeftOf="@id/menu_layout_language_polish_layout"
+	            android:background="@color/language_divider" />
+            
+	        <com.agitive.usembassy.layouts.SquareLayout
+                android:id="@+id/menu_layout_language_english_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/menu_layout_language_divider" >
+	            
+	        	<com.agitive.usembassy.layouts.CustomTextView
+			        android:id="@+id/menu_layout_language_english_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerInParent="true"
+			        android:text="@string/language_en"
+			        android:textSize="@dimen/text_normal" />
+	            	
+	        </com.agitive.usembassy.layouts.SquareLayout>
+                
+        </RelativeLayout>
+        
+        <ExpandableListView
+            android:id="@+id/menu_layout_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_menu_left"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/menu_layout_language_bar"
+            android:groupIndicator="@null"
+            android:divider="@color/menu_header_divider"
+            android:dividerHeight="1dp"
+            android:childDivider="@color/menu_header"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:cacheColorHint="@color/list_view_cache_color_hint" >
+            
+        </ExpandableListView>
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

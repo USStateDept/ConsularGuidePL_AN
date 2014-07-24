@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_item_selector" >
+    
+    <ImageView
+        android:id="@+id/steps_list_item_layout_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:src="@drawable/submenu"
+        android:layout_centerVertical="true" />
+
+	<com.agitive.usembassy.layouts.CustomTextView
+	    android:id="@+id/steps_list_item_layout_item_name"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_toLeftOf="@id/steps_list_item_layout_icon"
+	    android:textColor="@color/steps_menu_item_text"
+	    android:textSize="@dimen/text_normal"
+	    android:paddingTop="@dimen/margin_medium"
+	    android:paddingBottom="@dimen/margin_medium"
+	    android:paddingLeft="@dimen/margin_medium"
+	    android:gravity="center_vertical" >
+	    
+	</com.agitive.usembassy.layouts.CustomTextView>
+    
+
+</RelativeLayout>

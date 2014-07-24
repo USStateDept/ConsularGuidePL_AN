@@ -1,0 +1,16 @@
+package com.agitive.usembassy.privateKeys;
+
+public class AgitivePrivateKeys {
+
+	public static final String SERVER_MASTER = "Master IP";
+	public static final String SERVER_SLAVE = "Slave IP";
+	public static final String YOUTUBE_API_KEY = "YouTube Api Key";
+	public static final String USTRAVELDOCS_URL = "USTraveldocs URL";
+	public static final String CGI_FEDERAL_POST_URL = "CGI federal URL";
+	public static final String GOOGLE_CLOUD_MESSAGING_PROJECT_ID = "Google Cloud Messaging Project ID";
+	public static final String TWITTER_O_AUTH_CONSUMER_KEY = "Twitter OAuth Consumer Key";
+	public static final String TWITTER_O_AUTH_CONSUMER_SECRET = "Twitter OAuth Consumer Secret";
+	public static final String TWITTER_O_AUTH_ACCESS_TOKEN = "Twitter OAuth Access Token";
+	public static final String TWITTER_O_AUTH_ACCESS_TOKEN_SECRET = "Twitter OAuth Access Token Secret";
+	
+}

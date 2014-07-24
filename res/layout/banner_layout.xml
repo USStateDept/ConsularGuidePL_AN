@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_layout_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+    
+    <ImageView
+		android:id="@+id/banner_layout_banner_background"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop" />
+    
+    <ImageView
+		android:id="@+id/banner_layout_banner_close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/banner_close_icon"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:paddingTop="@dimen/margin_xlarge"
+		android:paddingBottom="@dimen/margin_xlarge"
+		android:paddingRight="@dimen/margin_xlarge"
+		android:paddingLeft="@dimen/margin_xlarge" />
+    
+    <com.agitive.usembassy.layouts.CustomTextView
+		android:id="@+id/banner_layout_banner_title_background"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:maxLines="1"
+		android:textColor="@color/banner_title_background" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:paddingLeft="@dimen/margin_xlarge"
+		android:paddingRight="@dimen/margin_xlarge"
+		android:paddingBottom="@dimen/margin_small"
+		android:paddingTop="@dimen/margin_small"
+		android:background="@color/banner_type_background" >
+		
+        <com.agitive.usembassy.layouts.CustomTextView
+			android:id="@+id/banner_layout_banner_type_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/banner_text" />
+        
+    </RelativeLayout>
+    
+    <com.agitive.usembassy.layouts.CustomTextView
+		android:id="@+id/banner_layout_banner_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="@dimen/margin_xlarge"
+		android:layout_marginRight="@dimen/margin_xlarge"
+		android:textColor="@color/banner_text" />
+    
+    <com.agitive.usembassy.layouts.CustomTextView
+		android:id="@+id/banner_layout_banner_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin_xlarge"
+		android:layout_marginRight="@dimen/margin_xlarge"
+		android:layout_marginBottom="@dimen/margin_xlarge"
+		android:layout_below="@id/banner_layout_banner_title"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:maxLines="4"
+		android:ellipsize="end"
+		android:gravity="center_vertical"
+		android:textColor="@color/banner_text" />
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/regulations_layout_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2048" >
+    
+    	<FrameLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="926" />
+
+    	<RelativeLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="1022" >
+    	    
+    	    <RelativeLayout
+    		    android:id="@+id/welcome_page_2_layout_accept_button_layout"
+		        android:layout_width="1dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:background="@color/welcome_accept_layout_not_active"
+		        android:paddingTop="@dimen/margin_small"
+		        android:paddingBottom="@dimen/margin_small" >
+    	            
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true" >
+    	                
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_accept_text"
+	    	        	android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/accept"
+	                    android:layout_centerVertical="true"
+	                    android:textSize="@dimen/text_normal"
+	                    android:textColor="@color/welcome_accept_text_not_active" />
+    	                
+            		<ImageView
+            		    android:id="@+id/welcome_page_2_layout_accept_icon"
+	           			android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                  	android:src="@drawable/accept_arrow_not_active"
+	                  	android:layout_toRightOf="@id/welcome_page_2_layout_accept_text"
+	                  	android:layout_marginLeft="@dimen/margin_small"
+	                  	android:layout_centerVertical="true" />
+    	                
+				</RelativeLayout>
+    	            
+			</RelativeLayout>
+    	
+    		<com.agitive.usembassy.layouts.WelcomeScrollView
+    		    android:id="@+id/welcome_layout_scroll_view"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="match_parent"
+	    	    android:layout_marginBottom="@dimen/margin_medium"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_above="@id/welcome_page_2_layout_accept_button_layout"
+	    	    android:scrollbars="none"
+	    	    android:fadingEdge="none" >
+
+    	    	<LinearLayout
+	    	        android:layout_width="match_parent"
+	    	        android:layout_height="wrap_content"
+	    	        android:orientation="vertical" >
+    	        
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_info_text"
+    	        	    android:layout_width="wrap_content"
+    	        	    android:layout_height="wrap_content"
+    	        	    android:layout_marginLeft="@dimen/margin_xlarge"
+	    	            android:layout_marginRight="@dimen/margin_xlarge"
+    	        	    android:textColor="@color/welcome_layout_text"
+    	        	    android:text="@string/regulations_info"
+    	        	    android:textSize="@dimen/welcome_content" />
+    	        	
+    	        	<View
+    	        	    android:id="@+id/welcome_page_2_regulation_divider"
+    	        	    android:layout_width="match_parent"
+    	        	    android:layout_height="1dp"
+    	        	    android:layout_marginTop="@dimen/margin_medium"
+    	        	    android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+    	        	    android:background="@color/privacy_statement_divider" />
+    	        	
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+	    	            android:layout_marginRight="@dimen/margin_xlarge"
+	    	            android:layout_marginTop="@dimen/margin_medium"  
+	    	            android:text="@string/regulations_title"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/privacy_statement"
+	    	            android:textStyle="bold" />
+    	        
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_text_part_0"
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+				        android:layout_marginTop="@dimen/margin_medium"
+	    	            android:text="@string/regulations_text_part_0"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/welcome_content" />
+    	        	
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_text_part_1"
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+				        android:layout_marginTop="@dimen/margin_medium"
+	    	            android:text="@string/regulations_text_part_1"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/welcome_content"
+	    	            android:textStyle="bold" />
+    	        	    	        	
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_text_part_2"
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+				        android:layout_marginTop="@dimen/margin_medium"
+	    	            android:text="@string/regulations_text_part_2"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/welcome_content" />
+    	        	
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_text_part_3"
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+				        android:layout_marginTop="@dimen/margin_medium"
+	    	            android:text="@string/regulations_text_part_3"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/welcome_content"
+	    	            android:textStyle="bold" />
+    	        	
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_text_part_4"
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+				        android:layout_marginTop="@dimen/margin_medium"
+	    	            android:text="@string/regulations_text_part_4"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/welcome_content" />
+    	        	
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_text_part_5"
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+				        android:layout_marginTop="@dimen/margin_medium"
+	    	            android:text="@string/regulations_text_part_5"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/welcome_content"
+	    	            android:textStyle="bold" />
+    	        	
+    	        	<com.agitive.usembassy.layouts.CustomTextView
+    	        	    android:id="@+id/welcome_page_2_layout_regulation_text_part_6"
+	    	            android:layout_width="wrap_content"
+	    	            android:layout_height="wrap_content"
+	    	            android:layout_marginLeft="@dimen/margin_xlarge"
+				        android:layout_marginRight="@dimen/margin_xlarge"
+				        android:layout_marginTop="@dimen/margin_medium"
+	    	            android:text="@string/regulations_text_part_6"
+	    	            android:textColor="@color/welcome_layout_text"
+	    	            android:textSize="@dimen/welcome_content" />
+    	    
+    	    	</LinearLayout>
+    	
+    		</com.agitive.usembassy.layouts.WelcomeScrollView>
+
+		</RelativeLayout>
+	    
+		<FrameLayout
+	   		android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="100" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

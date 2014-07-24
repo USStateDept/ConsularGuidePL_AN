@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_medium"
+    android:paddingLeft="@dimen/margin_menu_left"
+    android:background="@drawable/menu_item_selector" >
+
+    <ImageView
+        android:id="@+id/menu_list_child_layout_more_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_centerVertical="true"
+        android:src="@drawable/submenu" />
+    
+    <com.agitive.usembassy.layouts.CustomTextView
+        android:id="@+id/menu_list_child_layout_child_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/menu_list_child_layout_more_icon"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/menu_text" />
+
+</RelativeLayout>

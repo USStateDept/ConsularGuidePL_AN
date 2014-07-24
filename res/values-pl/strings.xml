@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">US Embassy Mobile</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- WelcomeActivity -->
+    <string name="title_activity_welcome">US Embassy Mobile</string>
+    <string name="welcome_title">Witamy</string>
+    <string name="welcome_text">
+        Witamy w \"US Embassy Mobile\"! Departamentu Stanu Stanów 
+        Zjednoczonych Ameryki – Twoim źródle informacji konsularnej z 
+        Ambasady USA w Warszawie, Konsulatu w Krakowie oraz Agencji 
+        Konsularnej w Poznaniu. Przygotowaliśmy ją tak, by umożliwić łatwe i 
+        szybkie znalezienie odpowiedzi na pytania związane z wizami, zapewnić 
+        pomoc obywatelom Stanów Zjednoczonych mieszkającym lub przebywającym 
+        w Polsce, a także dostarczać najświeższych wiadomości z Ambasady na 
+        Twitterze. Odpowiedzi na Twoje pytania - tu i teraz.
+    </string>
+    <string name="welcome_swipe_to_accept">Proszę przesunąć w lewo, aby zaakceptować warunki</string>
+    <string name="regulations_info">
+        Przed użyciem aplikacji należy zapoznać się z opisanymi poniżej 
+        warunkami korzystania z niej. Za pośrednictwem aplikacji nie są 
+        zbierane dane osobowe
+    </string>
+    <string name="regulations_title">Oświadczenie o prywatności</string>
+    <string name="regulations_text_part_0">
+        Nie zbieramy żadnych państwa danych osobowych (PII), kiedy odwiedzacie 
+        państwo naszą stronę internetową, jeśli sami nie zdecydujecie się 
+        państwo ich nam przekazywać. Przekazywanie informacji umożliwiających 
+        identyfikację osób (PII) poprzez naszą stronę internetową jest 
+        dobrowolne, a dokonując tego, wyrażacie państwo zgodę na wykorzystanie 
+        informacji w określonym celu. Nieprzekazanie pewnych informacji może 
+        skutkować brakiem możliwości świadczenia przez nas usług, jakimi mogą 
+        być państwo zainteresowani. Jeśli wybiorą państwo opcję przekazania 
+        informacji PII stronie Departamentu Stany USA np. poprzez wypełnienie 
+        formularza internetowego lub wysłanie do nas maila, wykorzystamy te 
+        informacje do tego, by dostarczyć wymagane przez państwa informacje 
+        lub usługę lub do udzielenia odpowiedzi. Rodzaje informacji, jakie 
+        możemy od państwa dostawać, zależą od tego, co państwo robicie, gdy 
+        odwiedzacie naszą stronę.\n\nNatomiast automatycznie zbierane są i 
+        przechowywane nazwy domen, z których następuje połączenie z 
+        Internetem (.com, .edu, itp.); data i czas korzystania z naszej 
+        strony oraz adres internetowy strony, poprzez którą weszli państwo na 
+        nasze strony (np. wyszukiwarki lub strony linkującej). Zebrane 
+        informacje wykorzystujemy w celach statystycznych, aby określić ilość 
+        osób odwiedzających poszczególne podstrony na naszej stronie oraz po 
+        to, by uczynić ją bardziej użyteczną dla państwa.
+	</string>
+	<string name="regulations_text_part_1">Jeśli wysyłacie państwo do nas e-mail</string>
+	<string name="regulations_text_part_2">
+	    Mogą się państwo zdecydować na przesłanie nam swoich danych osobowych, 
+	    np. w e-mailu z komentarzem lub pytaniem. Wykorzystujemy te informacje 
+	    w celu poprawienia świadczonych państwu usług lub by odpowiedzieć na 
+	    państwa prośbę. Czasami przesyłamy państwa e-mail innym agencjom rządu 
+	    amerykańskiego, które mogą lepiej państwu pomóc. Z wyjątkiem 
+	    nakazanych prawem dochodzeń nie przekazujemy naszych e-maili żadnym 
+	    innym organizacjom zewnętrznym.
+    </string>
+    <string name="regulations_text_part_3">Strony internetowe i aplikacje stron trzecich</string>
+    <string name="regulations_text_part_4">
+        Zamieszczamy linki do serwisów społecznościowych i innych rodzajów 
+        witryn stron trzecich. Wykorzystujemy strony serwisów 
+        społecznościowych do kontaktu z zagranicznymi użytkownikami oraz by 
+        prowadzić działania w ramach dyplomacji publicznej na całym świecie. 
+        Serwisy społecznościowe są wykorzystywane do informowania o 
+        organizowanych przez ambasadę wydarzeniach i do nawiązywania kontaktu 
+        z użytkownikami. Korzystamy również z technologii do pomiaru i 
+        dostosowania do użytkowników, by mierzyć liczbę osób odwiedzających 
+        nasze strony i podstrony, a także by uczynić nasze strony bardziej 
+        pożytecznymi dla użytkowników. W niektórych przypadkach aplikacje 
+        stron trzecich mogą wymagać podania adresu e-mailowego, nazwy 
+        użytkownika, hasła czy lokalizacji geograficznej w celu 
+        zarejestrowania konta. Nie wykorzystujemy stron internetowych stron 
+        trzecich do uzyskiwania ani zbierania informacji PII od użytkowników. 
+        Nie gromadzimy i nie przechowujemy żadnych umożliwiających 
+        identyfikację informacji zebranych przez jakiekolwiek witryny stron 
+        trzecich, żadne informacje PII nie będą ujawniane, sprzedawane czy 
+        przekazywane jakiemukolwiek podmiotowi poza Departamentem Stanu, z 
+        wyjątkiem przypadków zaistnienia takiego wymogu w ramach stosowania 
+        prawa przez organy ścigania lub w związku z realizacją aktu 
+        prawnego.\n\nMożemy przeprowadzać różnego rodzaju ankiety internetowe 
+        w celu zebrania opinii i komentarzy od losowo wybranej grupy 
+        użytkowników. Przede wszystkim Departament Stanu na bieżąco korzysta 
+        z internetowej ankiety ForeSee Results American Customer Satisfaction 
+        Index (ACSI) w celu uzyskania ocen oraz danych dot. zadowolenia 
+        użytkowników odwiedzających nasze strony. Ankieta ta nie gromadzi 
+        danych PII. Losowo wybranej grupie użytkowników wyświetla się 
+        zaproszenie do wzięcia udziału w badaniu, jednakże jest ono 
+        opcjonalne i nie na wszystkich stronach ambasady jest przeprowadzane. 
+        Jeśli nie zechcą państwo wziąć udziału w ankiecie, nadal będziecie 
+        państwo mieli dostęp do identycznych informacji i zasobów na naszej 
+        stronie – takich samych, do jakich dostęp mają użytkownicy biorący 
+        udział w ankiecie. Raporty z ankiet są widoczne tylko dla 
+        administratorów sieci i innych pracowników, którzy potrzebują tego 
+        rodzaju informacji do wykonywania swoich obowiązków. Możemy korzystać 
+        również z innych ograniczonych czasowo ankiet przygotowanych do 
+        określonych celów, wyszczególnionych w momencie zamieszczenia ich na 
+        stronie.
+    </string>
+    <string name="regulations_text_part_5">Linki do stron zewnętrznych</string>
+    <string name="regulations_text_part_6">
+        Na naszej stronie znajduje się dużo linków do innych amerykańskich 
+        agencji, ambasad, organizacji międzynarodowych i prywatnych, zarówno w 
+        Stanach Zjednoczonych, jak i w innych krajach. Jeśli przechodzą 
+        państwo za pomocą tych linków na inne strony, wychodzą państwo z 
+        naszej strony, a na innych odwiedzanych stronach podlegają państwo 
+        zasadom prywatności tychże innych stron.\n\nDokładamy wszelkich 
+        starań, aby dostarczyć państwu dokładnych i wyczerpujących informacji.
+        Jednakże nie możemy zagwarantować, że nie pojawią się żadne błędy. 
+        W odniesieniu do dokumentów i informacji dostępnych na niniejszej 
+        stronie internetowej ani ambasada, ani stali lub kontraktowi 
+        pracownicy nie udzielają żadnych gwarancji - wyraźnych bądź 
+        dorozumianych – włączywszy w to gwarancje przydatności handlowej lub 
+        przydatności do określonego celu. Ponadto ambasada nie ponosi 
+        odpowiedzialności prawnej za dokładność, wyczerpujący charakter czy 
+        przydatność jakichkolwiek informacji, produktów lub procesów 
+        wspomnianych na niniejszych stronach i nie stanowi, że wykorzystanie 
+        takich informacji, produktów lub procesów nie naruszałoby prywatnych 
+        praw.\n\nZe względu na bezpieczeństwo strony oraz aby zapewnić 
+        dostępność usługi dla wszystkich użytkowników Departament Stanu 
+        korzysta z programów monitorujących ruch na stronie w celu 
+        identyfikacji nieuprawnionych prób załadowania lub zmienienia 
+        informacji lub wyrządzenia innych szkód. Nieuprawnione próby 
+        załadowania informacji lub zmiany informacji w tym serwisie są ściśle 
+        zakazane i mogą być karalne na mocy ustawy Computer Fraud and Abuse 
+        Act z 1986 r. Informacje mogą być wykorzystywane w przypadku 
+        nakazanych prawem dochodzeń. Z wyjątkiem wyżej wymienionych 
+        przypadków nie są podejmowane żadne inne próby w celu 
+        zidentyfikowania poszczególnych użytkowników lub ich zwyczajów 
+        korzystania ze strony. Nieupoważnione próby załadowania informacji 
+        i/lub zmiany informacji na tej stronie są ściśle zakazane i podlegają 
+        ściganiu na mocy ustawy Computer Fraud and Abuse Act z 1986 roku oraz 
+        Title 18 U.S.C. Sec.1001 i 1030.
+    </string>
+	<string name="accept">Akceptuję</string>
+
+    <!-- Menu -->
+    <string name="home">Ekran główny</string>
+    <string name="language_en">EN</string>
+    <string name="language_pl">PL</string>
+    <string name="language">Język</string>
+    
+    <!-- MainActivity -->
+    <string name="title_activity_you_tube_player">YouTubePlayerActivity</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
+    <string name="main_activity_no_internet">Brak połączenia z siecią Internet. Zawartość nie może zostać uaktualniona</string>
+    <string name="main_activity_sync">Synchronizacja w toku. Proszę czekać&#8230;</string>
+    
+    <!-- toolbar -->
+    <string name="feedback" >Opinia</string>
+    <string name="toolbar_language_en">EN</string>
+    <string name="toolbar_language_pl">PL</string>
+    
+    <!-- Videos Layout -->
+    <string name="recent_videos">Najnowsze wideo</string>
+    <string name="most_viewed">Najczęściej oglądane</string>
+    <string name="videos_fragment_server_error_message">Brak dostępnych filmów. Spróbuj ponownie później</string>
+    <string name="videos_fragment_no_internet_for_video_play">Brak połączenia z siecią Internet. Film nie może zostać odtworzony</string>
+    <string name="videos_fragment_no_internet_for_videos_download">Brak połączenia z siecią Internet. Filmy nie są dostępne</string>
+    
+    <!-- FileManager -->
+    <string name="delete">USUŃ</string>
+   	<string name="update">UAKTUALNIJ</string>
+   	<string name="send">Wyślij \u00BB</string>
+   	<string name="update_in_file_detail">Uaktualniono:\u0020</string>
+   	<string name="file_manager_server_error_message">Twoja lista plików może być nieaktualna. Spróbuj ponownie później</string>
+   	<string name="file_manager_no_internet_files_list">Brak połączenia z siecią Internet. Informacja o nowych plikach nie może zostać pobrana</string>
+   	<string name="file_manager_no_internet_file_downloading">Brak połączenia z siecią Internet. Plik nie może zostać pobrany</string>
+   	<string name="file_manager_file_error">Plik nie może zostać pobrany. Spróbuj ponownie później</string>
+   	<string name="file_manager_file_detail_divider">" | "</string>
+   	
+   	<!-- Feedback -->
+   	<string name="feedback_title">Opinia</string>
+   	<string name="feedback_email">Twój adres e-mail (opcjonalnie)</string>
+   	<string name="feedback_content">Treść</string>
+   	<string name="feedback_send">Wyślij \u00BB</string>
+   	<string name="feedback_send_successful">Opinia została wysłana</string>
+   	<string name="feedback_empty_content">Treść opinii nie może być pusta</string>
+   	<string name="feedback_email_address_not_valid">Adres e-mail jest niepoprawny</string>
+   	<string name="feedback_no_internet">Brak połączenia z siecią Internet. Opinia nie może zostać wysłana</string>
+   	<string name="feedback_too_short_time">Możesz wysłać jedną opinię co minutę. Spróbuj ponownie później</string>
+   	<string name="feedback_server_error_message">Wysłanie Twojej opinie nie jest możliwe. Spróbuj ponownie później</string>
+   	<string name="feedback_description">
+   	    Prosimy o przekazywanie komentarzy lub sugestii dotyczących aplikacji 
+   	    konsularnej. W przypadku pytań dotyczących statusu podania wizowego 
+   	    lub pytań niezwiązanych z aplikacją, prosimy kliknąć tutaj:
+   	</string>
+   	
+   	<!-- Progress Dialog -->
+   	<string name="progress_dialog_message">Trwa pobieranie nowej zawartości.\nProszę czekać&#8230;</string>
+   	
+   	<!-- Update Question Dialog -->
+   	<string name="update_question_updated_available">Aktualizacje są dostępne</string>
+   	<string name="update_question_content">Aktualizacje są dostępne do pobrania. Możesz pobrać je teraz i przejść do ekranu głównego lub zaktualizować zawartość gdy aplikacja zostanie uruchomiona następnym razem.</string>
+   	<string name="update_question_update_now">Aktualizuj teraz</string>
+   	<string name="update_question_next_time">Aktualizuj następnym razem</string>
+   	
+   	<!-- Call Dialog -->
+   	<string name="call_dialog_title">"Czy chcesz wykonać połączenie?</string>
+   	<string name="call_dialog_message">Zaczniesz dzwonić pod numer telefonu</string>
+   	<string name="call_dialog_positive">Tak</string>
+   	<string name="call_dialog_negative">Nie</string>
+   	
+   	<!-- Banner -->
+   	<string name="banner_type_emergency">Uwaga</string>
+   	<string name="banner_type_security_advisory">Ostrzeżenie</string>
+   	<string name="banner_type_calendar_update">Kalendarz</string>
+   	<string name="banner_type_new_media_release">Aktualności</string>
+   	<string name="banner_type_general_update">Nowość</string>
+   	
+   	<!-- Main screen -->
+   	<string name="main_screen_welcome">Witamy</string>
+   	<string name="main_screen_us_mission_poland">Misja USA w Polsce</string>
+   	<string name="main_screen_server_error_message">Artykuły i Tweety mogą być nieaktualne</string>
+   	<string name="main_screen_no_internet">Brak połączenia z siecią Internet. Artykuły i Tweety nie mogą zostać uaktualnione</string>
+   	<string name="main_screen_no_internet_for_tweet">Brak połączenia z siecią Internet. Tweet nie może zostać otworzony</string>
+   	
+   	<!-- Article -->
+   	<string name="article_layout_layout_name">Artykuł</string>
+   	
+   	<!-- Server error dialog fragment -->
+   	<string name="server_error_dialog_title">Usługa chwilowo niedostępna</string>
+   	<string name="server_error_dialog_neutral_button_text">OK</string>
+   	
+   	<!-- News Fragment -->
+   	<string name="news_fragment_server_error_message">Artykuły i Tweety mogą być nieaktualne. Spróbuj ponownie później</string>
+   	<string name="news_fragment_no_internet">Brak połączenia z siecią Internet. Artykuły i Tweety nie mogą zostać uaktualnione</string>
+   	<string name="news_fragment_sync">Synchronizacja w toku. Proszę czekać&#8230;</string>
+   	
+   	<!-- Passport Tracking -->
+   	<string name="passport_tracking_passport_number">Numer paszportu</string>
+   	<string name="passport_tracking_send">Sprawdź status paszportu \u00BB</string>
+   	<string name="passport_tracking_server_error_message">Status paszportu nie może zostać sprawdzony. Spróbuj ponownie później</string>
+   	<string name="passport_tracking_no_internet">Brak połączenia z siecią Internet. Status paszportu nie może zostać sprawdzony</string>
+   	<string name="passport_tracking_passport_number_empty">Numer paszportu nie może być pusty</string>
+   	<string name="passport_tracking_description">
+   	    Po rozmowie wizowej w Ambasadzie można sprawdzić, gdzie znajduje się 
+   	    paszport. Aby sprawdzić status paszportu, należy wypełnić ten 
+   	    formularz.\n\nJeśli paszport jest gotowy do odebrania, należy go 
+   	    odebrać w stosownym czasie i przedstawić wymagane 
+   	    dokumenty.\n\nPaszport będzie można odebrać w TNT Express przez 9 dni 
+   	    kalendarzowych od otrzymania potwierdzenia o dostarczeniu paszportu 
+   	    do wybranego punktu. Nieodebranie paszportu w wyznaczonym czasie może 
+   	    spowodować, że otrzymają go Państwo z opóźnieniem.
+   	</string>
+   	    
+   	<!-- File Manager Deleting Files Dialog Fragment -->
+   	<string name="file_manager_deleting_files_dialog_fragment_title">Następujące dokumenty zostaną usunięte z aplikacji</string>
+   	<string name="file_manager_deleting_files_dialog_fragment_ok">OK</string>
+
+</resources>

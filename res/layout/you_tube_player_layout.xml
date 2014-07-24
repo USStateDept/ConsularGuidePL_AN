@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YouTubePlayerActivity"
+    android:background="@color/youtube_layout_background"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/you_tube_player_layout_you_tube_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

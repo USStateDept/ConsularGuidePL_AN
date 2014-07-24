@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3" >"
+    
+	    <RelativeLayout
+	        android:id="@+id/main_screen_layout_flag_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2" >
+        
+	        <ImageView
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:scaleType="centerCrop"
+	            android:src="@drawable/flag" />
+	        
+	        <com.agitive.usembassy.layouts.CustomTextView
+	            android:id="@+id/main_screen_layout_us_mission_poland_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/us_mission_poland_text"
+	            android:text="@string/main_screen_us_mission_poland"
+	            android:layout_marginRight="@dimen/margin_xlarge"
+	            android:layout_marginBottom="@dimen/margin_xlarge"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentBottom="true" />
+	        
+	        <com.agitive.usembassy.layouts.CustomTextView
+	            android:id="@+id/main_screen_layout_welcome_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/welcome_text"
+	            android:text="@string/main_screen_welcome"
+	            android:layout_marginRight="@dimen/margin_xlarge"
+	            android:layout_alignParentRight="true"
+	            android:layout_above="@id/main_screen_layout_us_mission_poland_text" />
+        
+    	</RelativeLayout>
+    	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:orientation="horizontal"
+	        android:weightSum="2" >
+	        
+	        <RelativeLayout
+		        android:id="@+id/main_screen_layout_news_0_layout"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1" >
+		        
+	            <ImageView
+	                android:id="@+id/main_screen_layout_news_0_background"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:scaleType="centerCrop" />
+	            
+	            <ImageView
+            		android:layout_width="match_parent"
+            		android:layout_height="match_parent"
+            		android:src="@drawable/news_gradient" />
+	            
+	            <ImageView
+	                android:id="@+id/main_screen_layout_news_0_read_more_icon"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="@dimen/margin_small"
+	                android:paddingRight="@dimen/margin_xlarge"
+	                android:paddingBottom="@dimen/margin_xlarge"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentBottom="true"
+	                android:src="@drawable/read_more" />
+	                
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/main_screen_layout_news_0_title"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_toLeftOf="@id/main_screen_layout_news_0_read_more_icon"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentBottom="true"
+	                android:layout_marginLeft="@dimen/margin_xlarge"
+	                android:layout_marginBottom="@dimen/margin_xlarge"
+	                android:textColor="@color/news_title"
+	                android:ellipsize="end"
+	                android:maxLines="3" />
+	                
+	        </RelativeLayout>
+	        
+	        <RelativeLayout
+	            android:id="@+id/main_screen_layout_tweet_layout"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@color/tweet_background" >
+	            
+	            <ImageView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="@dimen/margin_xlarge"
+            		android:layout_marginBottom="@dimen/margin_xlarge"
+            		android:layout_marginTop="@dimen/margin_medium"
+            		android:layout_alignParentBottom="true"
+            		android:src="@drawable/twitter" />
+	            
+	            <ImageView
+	                android:id="@+id/main_screen_layout_tweet_read_more_icon"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="@dimen/margin_small"
+	                android:paddingRight="@dimen/margin_xlarge"
+	                android:paddingBottom="@dimen/margin_xlarge"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentBottom="true"
+	                android:src="@drawable/read_more" />
+	            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/main_screen_layout_tweet_title"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_toLeftOf="@id/main_screen_layout_tweet_read_more_icon"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentBottom="true"
+	                android:layout_marginLeft="@dimen/margin_xlarge"
+	                android:layout_marginBottom="@dimen/margin_xlarge"
+	                android:textColor="@color/tweet_title"
+	                android:maxLines="3"
+	                android:ellipsize="end" />
+	            
+	        </RelativeLayout>
+	        
+	    </LinearLayout>
+    
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/main_screen_layout_banner_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+       
+</RelativeLayout>

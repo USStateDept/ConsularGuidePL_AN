@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:clickable="true"
+    android:soundEffectsEnabled="false" >
+    
+    <RelativeLayout
+        android:id="@+id/videos_layout_name_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_title_bar" >
+        
+        <ImageView
+            android:id="@+id/videos_layout_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_xlarge"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium" />
+        
+        <ImageView
+            android:id="@+id/videos_layout_button_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_grey"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_xlarge"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:visibility="invisible" />
+        
+        <com.agitive.usembassy.layouts.CustomTextView
+            android:id="@+id/videos_layout_layout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/videos_layout_button_frame"
+            android:layout_toRightOf="@id/videos_layout_back_button"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium"
+            android:textColor="@color/layout_title_text"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/videos_layout_name_bar_layout"
+        android:scrollbars="none"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <com.agitive.usembassy.layouts.CustomTextView
+                android:id="@+id/videos_layout_recent_videos_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/margin_xlarge"
+		        android:layout_marginRight="@dimen/margin_xlarge"
+		        android:paddingTop="@dimen/margin_medium"
+		        android:text="@string/recent_videos"
+		        android:textColor="@color/recent_videos_text"
+		        android:textSize="@dimen/header_1"
+		        android:textStyle="bold" />
+            
+            <HorizontalScrollView
+                android:id="@+id/videos_layout_horizontal_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:scrollbars="none"
+                android:fadingEdge="none" >
+                
+                <LinearLayout
+                    android:id="@+id/videos_layout_recent_videos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                    
+                    <RelativeLayout
+                        android:id="@+id/videos_layout_no_internet_recent_video_placeholder_0"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_xlarge"
+                        android:background="@color/video_placeholder" >
+                        
+                    </RelativeLayout>
+                    
+                    <RelativeLayout
+                        android:id="@+id/videos_layout_no_internet_recent_video_placeholder_1"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:background="@color/video_placeholder" >
+                        
+                    </RelativeLayout>
+                    
+                    <RelativeLayout
+                        android:id="@+id/videos_layout_no_internet_recent_video_placeholder_2"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_xlarge"
+                        android:background="@color/video_placeholder" >
+                        
+                    </RelativeLayout>
+                    
+                </LinearLayout>
+                
+            </HorizontalScrollView>
+            
+            <com.agitive.usembassy.layouts.CustomTextView
+                android:id="@+id/videos_layout_most_viewed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+		        android:layout_marginRight="@dimen/margin_xlarge"
+		        android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/most_viewed"
+                android:textColor="@color/most_viewed_text"
+                android:textSize="@dimen/header_1"
+                android:textStyle="bold" />
+            
+            <RelativeLayout
+            	android:id="@+id/videos_layout_no_internet_most_viewed_video_placeholder"
+               	android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+		        android:layout_marginRight="@dimen/margin_xlarge"
+		        android:layout_marginTop="@dimen/margin_large"
+		        android:layout_marginBottom="@dimen/margin_large"
+                android:background="@color/video_placeholder" >
+                        
+           	</RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/videos_layout_most_viewed_miniature_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+		        android:layout_marginRight="@dimen/margin_xlarge"
+		        android:layout_marginTop="@dimen/margin_medium"
+		        android:visibility="gone" >
+                
+                <ImageView 
+	                android:id="@+id/videos_layout_most_viewed_miniature"
+	                android:layout_width="1dp"
+	                android:layout_height="1dp" />
+                
+                <ImageView
+                    android:id="@+id/videos_layout_most_viewed_miniature_dimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/video_miniature_dimmer" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play" />
+                
+            </RelativeLayout>
+            
+            <com.agitive.usembassy.layouts.CustomTextView
+                android:id="@+id/videos_layout_most_viewed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+		        android:layout_marginRight="@dimen/margin_xlarge"
+		        android:layout_marginTop="@dimen/margin_medium"
+                android:textColor="@color/most_viewed_title"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+            
+            <com.agitive.usembassy.layouts.CustomTextView
+                android:id="@+id/videos_layout_most_viewed_published_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+		        android:layout_marginRight="@dimen/margin_xlarge"
+		        android:layout_marginTop="@dimen/margin_medium"
+		        android:layout_marginBottom="@dimen/margin_large"
+                android:textColor="@color/most_viewed_date"
+                android:textSize="@dimen/text_small"
+                android:visibility="gone" />
+                
+        </LinearLayout>
+    
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/videos_layout_main_progress_bar_layout"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/layout_background"
+	    android:clickable="true"
+	    android:soundEffectsEnabled="false" >
+        
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

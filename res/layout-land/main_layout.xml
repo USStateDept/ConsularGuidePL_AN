@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="900"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:background="@color/main_theme" >
+            
+            <ImageView
+                android:id="@id/main_layout_menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/margin_xlarge"
+                android:paddingRight="@dimen/margin_xlarge"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu" />
+            
+            <ImageView
+                android:id="@+id/main_layout_toolbar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_xlarge"
+                android:paddingRight="@dimen/margin_xlarge"
+                android:src="@drawable/tools" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/main_layout_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="825" >
+            
+            <FrameLayout
+                android:id="@+id/main_layout_fragment_below_container"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+            
+          	<FrameLayout
+	            android:id="@+id/main_layout_fragment_above_container"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:visibility="invisible" />
+                
+            <FrameLayout
+                android:id="@+id/main_layout_right_column_fragment_below_layout"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+            
+            <RelativeLayout
+                android:id="@+id/main_layout_right_column_above_layout"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" >
+                
+                <RelativeLayout
+                    android:id="@+id/main_layout_right_column_above_layout_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:background="@color/layout_background" >
+                    
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+                    
+                </RelativeLayout>
+                
+                <FrameLayout
+	                android:id="@+id/main_layout_right_column_fragment_above_layout"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:visibility="invisible"
+	                android:layout_alignParentRight="true" />
+                
+            </RelativeLayout>
+                
+            <FrameLayout
+                android:id="@+id/main_layout_banner_fragment_container"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />
+                
+            <FrameLayout
+	            android:id="@+id/main_layout_fragment_feedback_container"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:visibility="invisible" />
+            
+            <com.agitive.usembassy.layouts.CustomTextView
+	        	android:id="@+id/main_layout_toolbar_open_text_height_meter"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text=""
+            	android:textSize="@dimen/text_normal"
+            	android:textStyle="bold" />
+            
+            <RelativeLayout
+                android:id="@+id/main_layout_toolbar_open"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/toolbar_open"
+                android:visibility="invisible"
+                android:clickable="true"
+                android:soundEffectsEnabled="false" >
+                
+                <RelativeLayout
+                    android:id="@+id/main_layout_toolbar_open_language_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+                
+                	<com.agitive.usembassy.layouts.SquareLayout
+	                    android:id="@+id/main_layout_language_en_layout"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent" >
+                    
+                    	<com.agitive.usembassy.layouts.CustomTextView
+	                        android:id="@+id/main_layout_language_en_text"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerInParent="true"
+	                        android:text="@string/toolbar_language_en"
+	                        android:textSize="@dimen/text_normal" />
+                    
+                	</com.agitive.usembassy.layouts.SquareLayout>
+                
+                	<View
+	                    android:id="@+id/main_layout_language_en_divider"
+	                    android:layout_width="1dp"
+	                    android:layout_height="match_parent"
+	                    android:layout_toRightOf="@id/main_layout_language_en_layout"
+	                    android:background="@color/language_divider" />
+                
+                	<com.agitive.usembassy.layouts.SquareLayout
+	                    android:id="@+id/main_layout_language_pl_layout"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:layout_toRightOf="@id/main_layout_language_en_divider" >
+                    
+                    	<com.agitive.usembassy.layouts.CustomTextView
+	                        android:id="@+id/main_layout_language_pl_text"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerInParent="true"
+	                        android:text="@string/toolbar_language_pl"
+	                        android:textSize="@dimen/text_normal" />
+                    
+                	</com.agitive.usembassy.layouts.SquareLayout>
+                
+                </RelativeLayout>
+                
+                <ImageView
+                    android:id="@+id/main_layout_feedback_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/margin_xlarge"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/feedback_icon" />
+                
+                <com.agitive.usembassy.layouts.CustomTextView
+                    android:id="@id/main_layout_feedback_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/main_layout_feedback_icon"
+                    android:gravity="center"
+                    android:text="@string/feedback"
+                    android:textColor="@color/feedback_text"
+                    android:textSize="@dimen/text_normal" />
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/main_layout_emblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/emblem" />
+
+</RelativeLayout>

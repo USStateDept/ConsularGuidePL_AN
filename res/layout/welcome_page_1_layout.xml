@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2048" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="926" />
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1022"
+            android:scrollbars="none"
+            android:fadingEdge="none" >
+        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:paddingBottom="@dimen/margin_medium" >
+            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	            	android:id="@+id/welcome_page_1_layout_welcome_title"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:layout_marginLeft="@dimen/margin_xlarge"
+	            	android:layout_marginRight="@dimen/margin_xlarge"
+	            	android:text="@string/welcome_title"
+	            	android:textColor="@color/welcome_layout_text"
+	            	android:textSize="@dimen/welcome_title" />
+            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	            	android:id="@+id/welcome_page_1_layout_welcome_text"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:layout_marginLeft="@dimen/margin_xlarge"
+	            	android:layout_marginRight="@dimen/margin_xlarge"
+	            	android:layout_marginTop="@dimen/margin_medium"
+	            	android:text="@string/welcome_text"
+	            	android:textColor="@color/welcome_layout_text"
+	            	android:textSize="@dimen/welcome_content" />
+	            
+	            <com.agitive.usembassy.layouts.CustomTextView
+	                android:id="@+id/welcome_page_1_swipe_to_accept_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_xlarge"
+	            	android:layout_marginRight="@dimen/margin_xlarge"
+	            	android:layout_marginTop="@dimen/margin_medium"
+	            	android:text="@string/welcome_swipe_to_accept"
+	            	android:textColor="@color/welcome_layout_text"
+	            	android:textSize="@dimen/welcome_content" />
+            
+        	</LinearLayout>
+        
+        </ScrollView>
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" />
+        
+    </LinearLayout>
+
+</RelativeLayout>
